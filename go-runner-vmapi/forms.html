@@ -1,0 +1,37 @@
+<!-- forms.html -->
+	<h1>new vm</h1>
+	<form method="POST">
+		<label>OS Cloud Profile:</label><br />
+		<select name="vm_os_profile">
+			<option value="cloud-ubuntuserver-amd64-18.04">Ubuntu 18.04 cloud image</option>
+			<option value="cloud-Debian-x86-9.">Debian 9.8 cloud image</option>
+			<option value="cloud-cloud-CentOS-7-x86_64">CentOS 7.6 cloud image</option>
+		</select>
+		<input type="hidden" id="vm_os_type" name="vm_os_type" value="linux">
+
+		<br />
+		<label>VM Name (e.g: ubuntu1)</label><br />
+		<input type="text" name="jname" value="testvm1" size="31" maxlength="31" /><br />
+
+		<label>RAM amount (e.g: 512m, 1g, 32g)</label><br />
+		<input type="text" name="vm_ram" value="4g" size="4" maxlength="4" /><br />
+
+		<label>vCPU (e.g: 4, 16):</label><br />
+		<input type="text" name="vm_cpus" value="4" size="2" maxlength="2"/><br />
+
+		<label>Boot disk size (e.g: 10g, 200g):</label><br />
+		<input type="text" name="imgsize" value="100g" size="4" maxlength="4" /><br />
+
+		<label>Cloud-init SSH pubkey:</label><br />
+		<input type="text" name="ci_user_pubkey" size="128" maxlength="512" /><br />
+
+		<label>Cloud-init IPv4:</label><br />
+		<input type="text" name="ci_ip4_addr" size="32" maxlength="32" value="172.17.0.99" /><br />
+
+		<input type="hidden" name="ci_gw4" size="32" maxlength="32" value="172.17.0.50" /><br />
+		<input type="hidden" name="runasap" size="1" maxlength="1" value="0" /><br />
+
+		<input type="submit">
+	</form>
+	<br />
+	<pre>{{.RunnerStr}}</pre>

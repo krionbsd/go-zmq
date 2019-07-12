@@ -1,0 +1,11 @@
+    {
+        "imgsize": "20g",
+        "vm_cpus": "1",
+        "vm_ram": "1g",
+        "vm_os_type": "linux",
+        "vm_os_profile": "CentOS-7-x86_64",
+        "ci_ip4_addr": "172.17.0.100/24",
+        "ci_gw4": "172.17.0.1",
+        "ci_user_add": "centos",
+        "ci_user_pubkey_centos": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFJ3N0IAGZnjkcC+joqxi2CqBVagzsIdnHGScEGZHiLP oginzburg@qct1-f12.it-grad.ru"
+    }
